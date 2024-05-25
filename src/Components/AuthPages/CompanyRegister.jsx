@@ -32,7 +32,7 @@ const CompanyRegister = () => {
         }
 
         try {
-            const response = await axios.post('https://icis-production.up.railway.app/api/companyregister', {
+            const response = await axios.post('https://icis-production.up.railway.app:7622/api/companyregister', {
                 name: companyname,
                 email,
                 password,

@@ -46,7 +46,7 @@ const SGKDetail = () => {
         }
 
         try {
-            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
+            const response = await axios.post("https://icis-production.up.railway.app:7622/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -75,7 +75,7 @@ const SGKDetail = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app/api/staffshowinternshipsstarted/${applicationId}`, {
+            const response = await axios.get(`https://icis-production.up.railway.app:7622/api/staffshowinternshipsstarted/${applicationId}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);
@@ -112,7 +112,7 @@ const SGKDetail = () => {
 
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.post(`https://icis-production.up.railway.app/api/uploadsgkdocument/${applicationId}`, formData, {
+            const response = await axios.post(`https://icis-production.up.railway.app:7622/api/uploadsgkdocument/${applicationId}`, formData, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "multipart/form-data"

@@ -37,7 +37,7 @@ const StudentHomePage = () => {
         }
 
         try {
-            const response = await axios.post('https://icis-production.up.railway.app/api/checktoken', {}, {
+            const response = await axios.post('https://icis-production.up.railway.app:7622/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ const StudentHomePage = () => {
 
     const fetchAnnouncements = async () => {
         try {
-            const response = await axios.get('https://icis-production.up.railway.app/api/announcements');
+            const response = await axios.get('https://icis-production.up.railway.app:7622/api/announcements');
             setAnnouncements(response.data);
         } catch (error) {
             console.error(error.response.data);
