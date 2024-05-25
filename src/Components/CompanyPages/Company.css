@@ -1,0 +1,413 @@
+.red-bar-company{
+    background-color: hsl(2, 81%, 34%); 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 10px;
+}
+
+.logo-container-company {
+    display: flex;
+    align-items: center;
+}
+
+.logo-company {
+    width: 80px;
+    height: 80px;
+    margin: 20px 30px;
+}
+
+.buttons-container-company {
+    display: flex;
+    align-items: center;
+}
+
+.redbarbutton-company {
+    background-color: hsl(0, 0%, 100%); 
+    color: hsl(0, 0%, 0%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 40px;  
+    margin: 35px 50px;
+}
+
+.redbarbutton-company:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1); 
+}
+
+.profile-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 30px; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+.profile-company h1 {
+    font-size: 15px;
+    margin: 10px 25px;
+    color: #333333; 
+    font-weight: bold; 
+}
+
+.dropdown-menu-company {
+    position: absolute;
+    right: 0;
+    top: 66%; 
+    background-color: #ffffff00;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    margin-right: 55px; 
+
+}
+
+.dropdown-item-company { 
+    padding: 8px 12px;
+    font-size: 15px; 
+    border-radius: 15px;
+    border: 2px solid #000000;   
+}
+
+.dropdown-item-company:hover {
+    background-color: hsl(0, 0%, 91%);
+}
+
+.main-content-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; 
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.544); 
+    height: 350px; 
+    width: 700px;
+}
+
+.announcements-container-company {
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    background-color: hsl(2, 81%, 34%); 
+    color: #ffffff;
+    overflow: auto; 
+    margin: 0  60px;
+}
+
+.announcements-title-company {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.next-button-company, .previous-button-company {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.next-button-company:hover, .previous-button-company:hover {
+    background-color: #891a1a;
+    color: #ffffff;
+    transform: scale(1.1) translateY(-50%);
+}
+
+.form-container-company {
+    background-color: hsl(2, 81%, 34%); 
+    padding: 20px;
+    width: 800px;
+    margin-top: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-container-company h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.form-group-company {
+    margin-bottom: 20px;
+}
+
+.form-group-company label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-group-company input,
+.form-group-company textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.form-group-company input:focus,
+.form-group-company textarea:focus {
+    border-color: #d32f2f;
+    outline: none;
+}
+
+.form-group-company textarea {
+    height: 150px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+.submit-button-company {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 40px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    height: 40px;
+}
+
+.submit-button-company:hover {
+    background-color: #b71c1c;
+}
+
+.applications-item-company {
+    background-color: hsl(0, 0%, 67%);
+    color: rgb(0, 0, 0);
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 1200px;
+    height: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.application-container-company {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: hsl(2, 81%, 34%);
+}
+
+.offername-item-company {
+    background-color: hsl(0, 0%, 90%);
+    color: rgb(0, 0, 0);
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 1200px;
+    height: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.studentname-company {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.view-button-company {
+    background-color: hsl(2, 81%, 34%); 
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-right: 20px;
+}
+
+.view-button-company:hover {
+    background-color: #000000;
+    color: hsl(0, 0%, 100%);
+}
+
+.applications-company {
+    background-color: hsl(2, 81%, 34%); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 150px;
+}
+
+.application-company {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    height: 300px;
+    width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.application-offername-company h2 {
+    color: #1a1a1a; 
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.application-namesurname-company h3 {
+    color: #666; 
+    margin-bottom: 30px;
+}
+
+.application-studentid-company p {
+    font-size: 14px; 
+    color: #333;
+}
+
+.application-grade-company{
+    font-size: 14px; 
+    color: #333;
+
+}
+
+.approve-button-application-company {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    bottom: 40px; 
+    right: 210px;
+}
+
+.approve-button-application-company:hover {
+    background-color: #45a049;
+}
+
+.reject-button-application-company {
+    background-color: #d32f2f; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    bottom: 40px; 
+    right: 70px;
+
+}
+
+.reject-button-application-company:hover {
+    background-color: #b71c1c;
+}
+
+.offer-name{
+    font-weight: normal;
+}
+
+.name{
+    font-weight: normal;
+}
+
+.student-number{
+    font-weight: normal;
+}
+
+.student-grade{
+    font-weight: normal;
+}
+
+.upload-button-company{
+    height: 150px;
+    width: 200px;
+    margin: 150px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-button-company .button-company{
+    background-color: #840808; 
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.upload-button-company .button-company:hover{
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+}
+
+.upload-button-company .input-company{
+    margin: 10px 0;
+    align-self: start;
+    margin: 20px 0;
+}
+
+.internship-container-company{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    height: 400px;
+    width: 1000px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; 
+}
+
+.internship-detail-company{
+    margin-bottom: 5px;
+}
+
+.internships-company{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.internship-company{
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+
+
+

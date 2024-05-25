@@ -1,0 +1,308 @@
+.red-bar-student {
+    background-color: hsl(2, 81%, 34%); 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 10px;
+}
+
+.logo-container-student {
+    display: flex;
+    align-items: center;
+}
+
+.logo-student {
+    width: 80px;
+    height: 80px;
+    margin: 20px 30px;
+}
+
+.buttons-container-student {
+    display: flex;
+    align-items: center;
+}
+
+.redbarbutton-student {
+    background-color: hsl(0, 0%, 100%); 
+    color: hsl(0, 0%, 0%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 40px;  
+    margin: 35px 50px;
+}
+
+.redbarbutton-student:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1); 
+}
+
+.profile-student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 30px; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+.profile-student h1 {
+    font-size: 15px;
+    margin: 10px 25px;
+    color: #333333; 
+    font-weight: bold; 
+}
+
+.dropdown-menu-student {
+    position: absolute;
+    right: 0;
+    top: 66%; 
+    background-color: #ffffff00;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    margin-right: 55px; 
+
+}
+
+.dropdown-item-student { 
+    padding: 8px 12px;
+    font-size: 15px; 
+    border-radius: 15px;
+    border: 2px solid #000000;   
+}
+
+.dropdown-item-student:hover {
+    background-color: hsl(0, 0%, 73%);
+}
+
+.main-content-student {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; 
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.544); 
+    height: 350px; 
+    width: 700px;
+}
+
+.announcements-container-student {
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    background-color: hsl(2, 81%, 34%); ;
+    color: #ffffff;
+    overflow: auto; 
+    margin: 0  60px;
+}
+
+.announcements-title-student {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.next-button-student, .previous-button-student {
+    top: 50%; 
+    transform: translateY(-50%); 
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.next-button-student:hover, .previous-button-student:hover {
+    background-color: #891a1a;
+    color: #ffffff;
+    transform: scale(1.1) translateY(-50%);
+}
+
+.opportunities-container-student {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: hsl(2, 81%, 34%);
+}
+
+.offername-item-student {
+    background-color: hsl(0, 0%, 90%);
+    color: rgb(0, 0, 0);
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 1200px;
+    height: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.companyname-student {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.view-button-student {
+    background-color: hsl(2, 81%, 34%);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-right: 20px;
+}
+
+.view-button-student:hover {
+    background-color: #000000;
+    color: hsl(0, 0%, 100%);
+}
+
+.opportunities-student {
+    background-color: hsl(2, 81%, 34%); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 150px;
+}
+
+.opportunity-student {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    height: 450px;
+    width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.opportunity-header-student h2 {
+    color: #1a1a1a; 
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.opportunity-name-student h3 {
+    color: #666; 
+    margin-bottom: 30px;
+}
+
+.opportunity-description-student p {
+    font-size: 14px; 
+    color: #333;
+}
+
+.opportunity-description-student h3{
+    font-size: 14px; 
+    color: #333;
+}
+
+.apply-button-student {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    bottom: 40px; 
+    right: 70px;
+
+}
+
+.apply-button-student:hover {
+    background-color: #45a049;
+}
+
+.applications-container-student {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: hsl(2, 81%, 34%);
+}
+
+.company-student {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.approve-reject-buttons-student {
+    display: flex;
+    justify-content: center;
+}
+
+.approve-button-student {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+.approve-button-student:hover {
+    background-color: #45a049;
+}
+
+.reject-button-student {
+    background-color: #d32f2f; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+.reject-button-student:hover {
+    background-color: #b71c1c;
+}
+
+.applications-item-student {
+    background-color: hsl(0, 0%, 91%);
+    color: rgb(0, 0, 0);
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 1200px;
+    height: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.company-name{
+    font-weight: normal;
+}
+
+.offer-name{
+    font-weight: normal;
+}
