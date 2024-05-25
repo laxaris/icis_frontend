@@ -18,7 +18,7 @@ const ForgotPassword = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await axios.post('https://icisbackend-production.up.railway.app/api/forgotpassword', { 
+            const response = await axios.post('https://icis-production.up.railway.app/api/forgotpassword', { 
                 email
             },{
                 headers: {

@@ -37,7 +37,7 @@ const ManageCompanies = () => {
         setIsSubmitting(true);
     
         try {
-            const response = await axios.post(`https://icisbackend-production.up.railway.app/api/managecompanyapplication/${companyId}`, {}, {
+            const response = await axios.post(`https://icis-production.up.railway.app/api/managecompanyapplication/${companyId}`, {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const ManageCompanies = () => {
     const fetchCompanies = async () => {
         const token = Cookies.get("jwtToken");
         try {
-            const response = await axios.get("https://icisbackend-production.up.railway.app/api/managecompanyapplication", {
+            const response = await axios.get("https://icis-production.up.railway.app/api/managecompanyapplication", {
                 headers: { "Authorization": `${token}` }
             });
             setCompanies(response.data);
@@ -87,7 +87,7 @@ const ManageCompanies = () => {
         }
 
         try {
-            const response = await axios.post("https://icisbackend-production.up.railway.app/api/checktoken", {}, {
+            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"

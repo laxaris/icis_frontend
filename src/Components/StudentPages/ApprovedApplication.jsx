@@ -37,7 +37,7 @@ const ApprovedApplication = () => {
         setIsSubmitting(true);
     
         try {
-            const response = await axios.post(`https://icisbackend-production.up.railway.app/api/studentapprovedapplications/${applicationId}`, {}, {
+            const response = await axios.post(`https://icis-production.up.railway.app/api/studentapprovedapplications/${applicationId}`, {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "isApprove": isApprove
@@ -69,7 +69,7 @@ const ApprovedApplication = () => {
     const fetchstudents = async () => {
         const token = Cookies.get("jwtToken");
         try {
-            const response = await axios.get("https://icisbackend-production.up.railway.app/api/studentapprovedapplications", {
+            const response = await axios.get("https://icis-production.up.railway.app/api/studentapprovedapplications", {
                 headers: { "Authorization": `${token}` }
             });
             setCompanies(response.data);
@@ -86,7 +86,7 @@ const ApprovedApplication = () => {
         }
 
         try {
-            const response = await axios.post("https://icisbackend-production.up.railway.app/api/checktoken", {}, {
+            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
