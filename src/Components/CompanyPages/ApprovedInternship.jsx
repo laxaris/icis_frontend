@@ -36,7 +36,7 @@ const ApprovedInternship = () => {
         }
 
         try {
-            const response = await axios.post('http://icisbackend-production.up.railway.app/api/checktoken', {}, {
+            const response = await axios.post('https://icisbackend-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ const ApprovedInternship = () => {
     const fetchapplications = async () => {
         const token = Cookies.get('jwtToken');
         try {
-            const response = await axios.get('http://icisbackend-production.up.railway.app/api/applicationstocompany', {
+            const response = await axios.get('https://icisbackend-production.up.railway.app/api/applicationstocompany', {
                 headers: { 'Authorization': `${token}` }
             });
             setApplications(response.data);

@@ -37,7 +37,7 @@ const CompanyHomePage = () => {
         }
 
         try {
-            const response = await axios.post('http://icisbackend-production.up.railway.app/api/checktoken', {}, {
+            const response = await axios.post('https://icisbackend-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ const CompanyHomePage = () => {
 
     const fetchAnnouncements = async () => {
         try {
-            const response = await axios.get('http://icisbackend-production.up.railway.app/api/announcements');
+            const response = await axios.get('https://icisbackend-production.up.railway.app/api/announcements');
             setAnnouncements(response.data);
         } catch (error) {
             console.error(error.response.data);

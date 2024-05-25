@@ -21,7 +21,7 @@ const LoginPage = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await axios.post('http://icisbackend-production.up.railway.app/api/login', {
+            const response = await axios.post('https://icisbackend-production.up.railway.app/api/login', {
                 email,
                 password
             }, {

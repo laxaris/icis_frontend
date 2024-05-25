@@ -46,7 +46,7 @@ const ApplicationFormDetail = () => {
         }
 
         try {
-            const response = await axios.post("http://icisbackend-production.up.railway.app/api/checktoken", {}, {
+            const response = await axios.post("https://icisbackend-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -75,7 +75,7 @@ const ApplicationFormDetail = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`http://icisbackend-production.up.railway.app/api/applicationforms/${applicationId}`, {
+            const response = await axios.get(`https://icisbackend-production.up.railway.app/api/applicationforms/${applicationId}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);
@@ -112,7 +112,7 @@ const ApplicationFormDetail = () => {
 
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.post(`http://icisbackend-production.up.railway.app/api/uploadapplicationform/${applicationId}`, formData, {
+            const response = await axios.post(`https://icisbackend-production.up.railway.app/api/uploadapplicationform/${applicationId}`, formData, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "multipart/form-data"
@@ -132,7 +132,7 @@ const ApplicationFormDetail = () => {
     const handleDownload = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`http://icisbackend-production.up.railway.app/api/downloadapplicationform/${applicationId}`, {
+            const response = await axios.get(`https://icisbackend-production.up.railway.app/api/downloadapplicationform/${applicationId}`, {
                 headers: {
                     "Authorization": `${token}`,
                 },
