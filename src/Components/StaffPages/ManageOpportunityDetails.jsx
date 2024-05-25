@@ -40,7 +40,7 @@ const ManageOpportunityDetails = () => {
         const token = Cookies.get("jwtToken");
         setIsSubmitting(true);
         try {
-            const response = await axios.post(`https://icis-production.up.railway.app:7622/api/approverejectoffer/${offerid}`,{},{
+            const response = await axios.post(`https://icis-production.up.railway.app/api/approverejectoffer/${offerid}`,{},{
                 headers: {
                     "Authorization": `${token}`,
                     'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const ManageOpportunityDetails = () => {
         }
 
         try {
-            const response = await axios.post("https://icis-production.up.railway.app:7622/api/checktoken", {}, {
+            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -110,7 +110,7 @@ const ManageOpportunityDetails = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app:7622/api/manageoffers/${offerid}`, {
+            const response = await axios.get(`https://icis-production.up.railway.app/api/manageoffers/${offerid}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);

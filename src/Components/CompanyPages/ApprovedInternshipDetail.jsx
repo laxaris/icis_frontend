@@ -41,7 +41,7 @@ const ApprovedInternshipDetail = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await axios.post(`https://icis-production.up.railway.app:7622/api/approveapplicationstocompany/${applicationId}`,{},{
+            const response = await axios.post(`https://icis-production.up.railway.app/api/approveapplicationstocompany/${applicationId}`,{},{
                 headers: {
                     "Authorization": `${token}`,
                     'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const ApprovedInternshipDetail = () => {
         }
 
         try {
-            const response = await axios.post("https://icis-production.up.railway.app:7622/api/checktoken", {}, {
+            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -111,7 +111,7 @@ const ApprovedInternshipDetail = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app:7622/api/applicationstocompany/${applicationId}`, {
+            const response = await axios.get(`https://icis-production.up.railway.app/api/applicationstocompany/${applicationId}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);

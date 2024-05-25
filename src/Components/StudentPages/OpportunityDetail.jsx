@@ -43,7 +43,7 @@ const OpportunityDetail = () => {
         setIsLoading(true);
  
         try {
-            const response = await axios.post(`https://icis-production.up.railway.app:7622/api/applyinternship/${offerid}`, {}, {
+            const response = await axios.post(`https://icis-production.up.railway.app/api/applyinternship/${offerid}`, {}, {
                 headers: {
                     'Authorization': `${token}`
                 }
@@ -89,7 +89,7 @@ const OpportunityDetail = () => {
         }
 
         try {
-            const response = await axios.post('https://icis-production.up.railway.app:7622/api/checktoken', {}, {
+            const response = await axios.post('https://icis-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ const OpportunityDetail = () => {
     const fetchOpportunity = async () => {
         try {
             const token = Cookies.get('jwtToken');
-            const response = await axios.get(`https://icis-production.up.railway.app:7622/api/showoffers/${offerid}`, {
+            const response = await axios.get(`https://icis-production.up.railway.app/api/showoffers/${offerid}`, {
                 headers: { 'Authorization': ` ${token}` }
             });
             setDetails(response.data);
