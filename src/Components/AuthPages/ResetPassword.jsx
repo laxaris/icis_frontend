@@ -29,7 +29,7 @@ const ResetPassword = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/resetpassword', {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/resetpassword', {
                 email,
                 password : newPassword, 
                 emailCode : code

@@ -36,7 +36,7 @@ const ApplicationForm = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/checktoken', {}, {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ const ApplicationForm = () => {
     const fetchapplications = async () => {
         const token = Cookies.get('jwtToken');
         try {
-            const response = await axios.get('http://localhost:8080/api/applicationforms', {
+            const response = await axios.get('http://icisbackend-production.up.railway.app/api/applicationforms', {
                 headers: { 'Authorization': `${token}` }
             });
             setApplications(response.data);

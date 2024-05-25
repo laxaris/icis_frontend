@@ -32,7 +32,7 @@ const CompanyRegister = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/companyregister', {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/companyregister', {
                 name: companyname,
                 email,
                 password,

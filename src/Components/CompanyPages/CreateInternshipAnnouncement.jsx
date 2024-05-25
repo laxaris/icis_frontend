@@ -42,7 +42,7 @@ const CreateInternshipAnnouncement = () => {
 
         const token = Cookies.get('jwtToken');
         try {
-            const response = await axios.post('http://localhost:8080/api/createoffer', {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/createoffer', {
                 companyname: announcement.offername,
                 offername: announcement.offername,
                 description: announcement.description
@@ -88,7 +88,7 @@ const CreateInternshipAnnouncement = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/checktoken', {}, {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'

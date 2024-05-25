@@ -28,7 +28,7 @@ const IyteRegister = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/iyteregister', {
+            const response = await axios.post('http://icisbackend-production.up.railway.app/api/iyteregister', {
                 email,
                 password
             }, {
