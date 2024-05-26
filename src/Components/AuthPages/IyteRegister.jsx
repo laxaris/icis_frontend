@@ -35,7 +35,7 @@ const IyteRegister = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 }
-            });
+            }).withCredentials(true);
 
             if (response.status === 202) {
                 setMessage(response.data );
