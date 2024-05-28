@@ -28,7 +28,11 @@ const IyteRegister = () => {
         }
 
         try {
-            const response = await axios.post('https://icis-production.up.railway.app/api/iyteregister', {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post('https://icis-production.up.railway.app/api/iyteregister', {
                 email,
                 password
             }, {

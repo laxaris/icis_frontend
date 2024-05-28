@@ -36,7 +36,11 @@ const ManageInternshipOpportunities = () => {
         }
 
         try {
-            const response = await axios.post('https://icis-production.up.railway.app/api/checktoken', {}, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post('https://icis-production.up.railway.app/api/checktoken', {}, {
                 headers: {
                     'Authorization': `${token}`,
                     'Content-Type': 'application/json'
@@ -65,7 +69,11 @@ const ManageInternshipOpportunities = () => {
     const fetchOpportunities = async () => {
         const token = Cookies.get('jwtToken');
         try {
-            const response = await axios.get('https://icis-production.up.railway.app/api/manageoffers', {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.get('https://icis-production.up.railway.app/api/manageoffers', {
                 headers: { 'Authorization': `${token}` }
             });
             setOpportunities(response.data);

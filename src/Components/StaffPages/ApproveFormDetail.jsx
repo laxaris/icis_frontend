@@ -48,7 +48,11 @@ const ApproveFormDetail = () => {
         const token = Cookies.get("jwtToken");
         setIsSubmitting(true);
         try {
-            const response = await axios.post(`https://icis-production.up.railway.app/api/approveapplicationform/${applicationId}`,{},{
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post(`https://icis-production.up.railway.app/api/approveapplicationform/${applicationId}`,{},{
                 headers: {
                     "Authorization": `${token}`,
                     'Content-Type': 'application/json',
@@ -89,7 +93,11 @@ const ApproveFormDetail = () => {
         }
 
         try {
-            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -118,7 +126,11 @@ const ApproveFormDetail = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app/api/approveforms/${applicationId}`, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.get(`https://icis-production.up.railway.app/api/approveforms/${applicationId}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);
@@ -155,7 +167,11 @@ const ApproveFormDetail = () => {
 
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.post(`https://icis-production.up.railway.app/api/uploadapplicationform/${applicationId}`, formData, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post(`https://icis-production.up.railway.app/api/uploadapplicationform/${applicationId}`, formData, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "multipart/form-data"
@@ -175,7 +191,11 @@ const ApproveFormDetail = () => {
     const handleDownload = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app/api/downloadapplicationform/${applicationId}`, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.get(`https://icis-production.up.railway.app/api/downloadapplicationform/${applicationId}`, {
                 headers: {
                     "Authorization": `${token}`,
                 },

@@ -46,7 +46,11 @@ const SGKDetail = () => {
         }
 
         try {
-            const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post("https://icis-production.up.railway.app/api/checktoken", {}, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "application/json"
@@ -75,7 +79,11 @@ const SGKDetail = () => {
     const fetchOpportunityDetails = async () => {
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.get(`https://icis-production.up.railway.app/api/staffshowinternshipsstarted/${applicationId}`, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.get(`https://icis-production.up.railway.app/api/staffshowinternshipsstarted/${applicationId}`, {
                 headers: { "Authorization": `${token}` }
             });
             setDetails(response.data);
@@ -112,7 +120,11 @@ const SGKDetail = () => {
 
         try {
             const token = Cookies.get("jwtToken");
-            const response = await axios.post(`https://icis-production.up.railway.app/api/uploadsgkdocument/${applicationId}`, formData, {
+            const username = 'user';
+    const password = 'a5836267-68d8-48f2-b10e-61f5ac65b44b'; // Replace this with the actual generated password
+    const credentials = btoa(`${username}:${password}`);
+
+const response = await axios.post(`https://icis-production.up.railway.app/api/uploadsgkdocument/${applicationId}`, formData, {
                 headers: {
                     "Authorization": `${token}`,
                     "Content-Type": "multipart/form-data"
