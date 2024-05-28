@@ -37,7 +37,8 @@ const response = await axios.post('https://icis-production.up.railway.app/api/iy
                 password
             }, {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Authorization': `Basic ${credentials}`
                 }
             }).withCredentials(true);
 
