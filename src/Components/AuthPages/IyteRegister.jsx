@@ -38,7 +38,6 @@ const response = await axios.post('https://icis-production.up.railway.app/api/iy
             }, {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Basic ${credentials}`
                 }
             }).withCredentials(true);
 
@@ -58,11 +57,14 @@ const response = await axios.post('https://icis-production.up.railway.app/api/iy
                 setShowPopup(true);
                 setTimeout(() => setShowPopup(false), 2000);
             }
-        } catch (error) {
+        } 
+        
+        catch (error) {
             setMessage(error.response?.data || 'Registration error: The server may be down.');
             setShowPopup(true);
             setTimeout(() => setShowPopup(false), 2000);
         }
+
         setIsSubmitting(false);
     };
 
